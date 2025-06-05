@@ -62,6 +62,13 @@ The output CSV files contain:
 - wind_speed_high_kph
 - wind_gust_high_kph
 
+## Sample Data
+Check the `sample_data` folder for example files:
+- weather_data_YYYYMM_complete.csv - Sample monthly data output
+- weather_data_cleanup.log - Sample log file
+- weather_fetch_checkpoint.json - Sample checkpoint file
+- example_console_output.txt - Sample of script running with API requests and data processing
+
 ## Checkpoint System
 The script saves progress after each month and can resume from the last completed month if interrupted.
 
