@@ -1,0 +1,91 @@
+API Request 964:
+URL: https://api.weather.com/v2/pws/history/daily?stationId=STATION_ID&format=json&units=m&date=20210330&apiKey=YOUR_API_KEY
+Status Code: 200
+
+Response Data:
+Date: 2021-03-30
+Observations found: 1
+
+Sample observation data:
+{
+  "stationID": "STATION_ID",
+  "tz": "Europe/London",
+  "obsTimeUtc": "2021-03-30T22:59:49Z",
+  "obsTimeLocal": "2021-03-30 23:59:49",
+  "epoch": 1617145189,
+  "lat": YOUR_LAT,
+  "lon": YOUR_LON,
+  "solarRadiationHigh": 393.49,
+  "uvHigh": 4.0,
+  "winddirAvg": 267,
+  "humidityHigh": 85,
+  "humidityLow": 37,
+  "humidityAvg": 56,
+  "qcStatus": -1,
+  "metric": {
+    "tempHigh": 21,
+    "tempLow": 7,
+    "tempAvg": 13,
+    "windspeedHigh": 17,
+    "windspeedLow": 0,
+    "windspeedAvg": 2,
+    "windgustHigh": 24,
+    "windgustLow": 0,
+    "windgustAvg": 4,
+    "dewptHigh": 9,
+    "dewptLow": 0,
+    "dewptAvg": 4,
+    "windchillHigh": 21,
+    "windchillLow": 4,
+    "windchillAvg": 13,
+    "heatindexHigh": 21,
+    "heatindexLow": 7,
+    "heatindexAvg": 13,
+    "pressureMax": 1040.3,
+    "pressureMin": 1034.88,
+    "pressureTrend": -0.14,
+    "precipRate": 0.0,
+    "precipTotal": 0.0
+  }
+}
+
+API Request 965:
+URL: https://api.weather.com/v2/pws/history/daily?stationId=STATION_ID&format=json&units=m&date=20210331&apiKey=YOUR_API_KEY
+Status Code: 200
+
+Response Data:
+Date: 2021-03-31
+Observations found: 0
+
+Saved temporary file: weather_data_202103_31.csv
+Records: 9
+
+Found 2 files to merge for 2021-03:
+- weather_data_202103_20.csv
+- weather_data_202103_31.csv
+
+File weather_data_202103_20.csv:
+Shape before validation: (20, 6)
+Date range: 2021-03-01 23:59:58 to 2021-03-20 23:59:54
+Unique dates: ['2021-03-01', '2021-03-02', '2021-03-03', '2021-03-04', '2021-03-05', '2021-03-06', '2021-03-07', '2021-03-08', '2021-03-09', '2021-03-10', '2021-03-11', '2021-03-12', '2021-03-13', '2021-03-14', '2021-03-15', '2021-03-16', '2021-03-17', '2021-03-18', '2021-03-19', '2021-03-20']
+
+File weather_data_202103_31.csv:
+Shape before validation: (9, 6)
+Date range: 2021-03-21 23:59:57 to 2021-03-30 23:59:49
+Unique dates: ['2021-03-21', '2021-03-23', '2021-03-24', '2021-03-25', '2021-03-26', '2021-03-27', '2021-03-28', '2021-03-29', '2021-03-30']
+
+Before deduplication:
+Total records: 29
+Date range: 2021-03-01 23:59:58 to 2021-03-30 23:59:49
+All dates present: ['2021-03-01', '2021-03-02', '2021-03-03', '2021-03-04', '2021-03-05', '2021-03-06', '2021-03-07', '2021-03-08', '2021-03-09', '2021-03-10', '2021-03-11', '2021-03-12', '2021-03-13', '2021-03-14', '2021-03-15', '2021-03-16', '2021-03-17', '2021-03-18', '2021-03-19', '2021-03-20', '2021-03-21', '2021-03-23', '2021-03-24', '2021-03-25', '2021-03-26', '2021-03-27', '2021-03-28', '2021-03-29', '2021-03-30']
+
+After deduplication:
+Final records: 29
+Date range: 2021-03-01 23:59:58 to 2021-03-30 23:59:49
+Final dates: ['2021-03-01', '2021-03-02', '2021-03-03', '2021-03-04', '2021-03-05', '2021-03-06', '2021-03-07', '2021-03-08', '2021-03-09', '2021-03-10', '2021-03-11', '2021-03-12', '2021-03-13', '2021-03-14', '2021-03-15', '2021-03-16', '2021-03-17', '2021-03-18', '2021-03-19', '2021-03-20', '2021-03-21', '2021-03-23', '2021-03-24', '2021-03-25', '2021-03-26', '2021-03-27', '2021-03-28', '2021-03-29', '2021-03-30']
+
+Merged monthly data saved to weather_data_202103_complete.csv
+
+Monthly Summary for March 2021:
+Records in this month: 29
+Temperature range: 0.0°C to 21.0°C
