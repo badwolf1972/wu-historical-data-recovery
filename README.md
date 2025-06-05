@@ -38,7 +38,7 @@ Example configuration:
 ```python
 api_key = "YOUR_API_KEY_HERE"
 station_id = "YOUR_STATION_ID"
-start_date = datetime(2018, 8, 10)
+start_date = datetime(2018, 1, 1)
 end_date = datetime.now()
 ```
 ## Data Validation
