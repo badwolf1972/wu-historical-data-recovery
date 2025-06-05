@@ -66,7 +66,7 @@ The output CSV files contain:
 Check the `sample_data` folder for example files:
 - sample_output_weather_data_201908_complete.csv - Sample monthly data output
 - sample_output_weather_data_cleanup.log - Sample log file
-- weather_fetch_checkpoint.json - Sample checkpoint file
+- sample_output_weather_fetch_checkpoint.json - Sample checkpoint file
 - sample_console_output.txt - Sample of script running with API requests and data processing
 
 ## Checkpoint System
